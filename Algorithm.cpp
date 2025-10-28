@@ -4,7 +4,7 @@
 int Algorithm::binarySearchByCode(const std::vector<Products>& products, int targetCode)
 {
     int left = 0;
-    int right = products.size() - 1;
+    int right = static_cast<int>(products.size()) - 1;
 
     while (left <= right) {
         int mid = left + (right - left) / 2;
@@ -30,7 +30,7 @@ void Algorithm::bubbleSort(std::vector<Products>& products)
     {
         for (int j = 0; j < n - i - 1; j++)
         {
-            if (products[j].code < products[j + 1].code)
+            if (products[j].code > products[j + 1].code)
             {
                 std::swap(products[j], products[j + 1]);
             }

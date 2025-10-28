@@ -1,8 +1,6 @@
 #pragma once
-#include "Algorithm.h"
 #include "Products.h"
 #include <vector>
-#include <string>
 
 class Algorithm
 {
