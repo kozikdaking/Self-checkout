@@ -23,6 +23,27 @@ int Algorithm::binarySearchByCode(const std::vector<Products>& products, int tar
     return -1;
 }
 
+int Algorithm::binarySearchByName(const std::vector<Products>& products, std::string targetName)
+{
+    int left = 0;
+    int right = static_cast<int>(products.size()) - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (products[mid].name == targetName) {
+            return mid;
+        }
+        else if (products[mid].name > targetName) {
+            right = mid - 1;
+        }
+        else {
+            left = mid + 1;
+        }
+    }
+
+    return -1;
+}
 void Algorithm::bubbleSort(std::vector<Products>& products)
 {
     int n = products.size();
