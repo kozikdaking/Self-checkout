@@ -29,8 +29,7 @@ void Logic::insertCode(std::vector<Products>&products)
 	else
 	{ 
 		std::cout << "Product: " << products[index].name <<" | Price: " <<products[index].price<<std::endl;
-		selectedProducts.push_back(products[index]);
-			
+		selectedProducts.push_back(products[index]);	
 	}
 	}
 }
