@@ -38,7 +38,7 @@ void Logic::receiptToTxt()
 	file << "==============================" << std::endl;
 	file << " " << std::endl;
 	file << "Date: " << buffer << std::endl;
-	file << "Receipt number: " << "x"<< std::endl;
+	file << "Receipt number: " << receiptNumber -1<< std::endl;
 	file << " " << std::endl;
 	file << "==============================" << std::endl;
 	file << " " << std::endl;
