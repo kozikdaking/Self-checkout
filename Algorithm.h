@@ -9,4 +9,3 @@ public:
     int binarySearchByName(const std::vector<Products>& products, std::string targetName);
     void bubbleSort(std::vector<Products>& products);
 };
-
